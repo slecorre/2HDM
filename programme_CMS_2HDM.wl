@@ -186,6 +186,7 @@ Print["Initializations DONE"]
 
 (* "Heavy" higgs at 125 GeV *) 
 
+
 BRhGaGa2=Array2HDM[[All,66]];
 BRhgg2=Array2HDM[[All,68]];
 BRhWW2=Array2HDM[[All,70]];
