@@ -7,7 +7,6 @@ Begin["Private`"]
 Print["Begin..."]
 
 
-
 $HistoryLength=1
 
 SetDirectory["/home/slecorre/Documents/CMS/2HDMC-1.7.0/"]
