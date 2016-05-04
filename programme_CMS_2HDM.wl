@@ -1,10 +1,11 @@
 (* ::Package:: *)
-
+KHI2 !!
 BeginPackage["THDMfull`"]
 
 Begin["Private`"]
 
 Print["Begin..."]
+
 
 
 $HistoryLength=1
@@ -222,6 +223,7 @@ Print["Done !"]
 
 
 
+
 chiWW=Block[{a,b,c,mug0,muV0,R}, a=22.53542693935295;
 b=2.382300635300683;
 c=6.972321500447737;
@@ -234,7 +236,8 @@ R=kV22/(BRhss2SM+k\[Gamma]22*BRhGaGa2SM+kg22*BRhgg2SM+kV22*BRhZZ2SM+kV22*BRhWW2S
 ];
 
 
-chiZZ=Block[{a,b,c,mug0,muV0,R}, a=11.065910085978555;
+
+(*chiZZ=Block[{a,b,c,mug0,muV0,R}, a=11.065910085978555;
 b=1.8729205285669688;
 c=1.079937160636133;
 mug0=Table[1.4388133781554047,lArray];
@@ -243,8 +246,10 @@ muV0 = Table[0.8076327247400148,lArray];
 R=kV22/(BRhss2SM+k\[Gamma]22*BRhGaGa2SM+kg22*BRhgg2SM+kV22*BRhZZ2SM+kV22*BRhWW2SM+kb22*BRhbb2SM+k\[Tau]22*(BRh\[Tau]\[Tau]2SM+BRh\[Mu]\[Mu]2SM)+BRhcc2SM+BRhZ\[Gamma]2SM);
 (a*(R*kg22-mug0)^2+2*b*(R*kg22-mug0)*(R*kV22-muV0)+c*(R*kV22-muV0)^2)
 ];
+*)
 
 
+(*
 chi\[Tau]\[Tau]=Block[{a,b,c,mug0,muV0,R}, a=3.496073648864013;
 b=2.581303927312333;
 c=9.782178330965264;
@@ -254,8 +259,10 @@ muV0 = Table[1.1391447471474951,lArray];
 R=k\[Tau]22/(BRhss2SM+k\[Gamma]22*BRhGaGa2SM+kg22*BRhgg2SM+kV22*BRhZZ2SM+kV22*BRhWW2SM+kb22*BRhbb2SM+k\[Tau]22*(BRh\[Tau]\[Tau]2SM+BRh\[Mu]\[Mu]2SM)+BRhcc2SM+BRhZ\[Gamma]2SM);
 (a*(R*kg22-mug0)^2+2*b*(R*kg22-mug0)*(R*kV22-muV0)+c*(R*kV22-muV0)^2)
 ];
+*)
 
 
+(*
 chi\[Gamma]\[Gamma]=Block[{a,b,c,mug0,muV0,R}, a=16.287512957235908;
 b=3.067864180159719;
 c=6.175671609346068;
@@ -265,8 +272,10 @@ muV0 = Table[1.073331195078713,lArray];
 R=k\[Gamma]22/(BRhss2SM+k\[Gamma]22*BRhGaGa2SM+kg22*BRhgg2SM+kV22*BRhZZ2SM+kV22*BRhWW2SM+kb22*BRhbb2SM+k\[Tau]22*(BRh\[Tau]\[Tau]2SM+BRh\[Mu]\[Mu]2SM)+BRhcc2SM+BRhZ\[Gamma]2SM);
 (a*(R*kg22-mug0)^2+2*b*(R*kg22-mug0)*(R*kV22-muV0)+c*(R*kV22-muV0)^2)
 ];
+*)
 
 
+(*
 chibb=Block[{a,b,c,mug0,muV0,R}, a=1.0812183083586497;
 b=-0.0018041338479032067;
 c=11.364289003398953;
@@ -276,12 +285,15 @@ muV0 = Table[0.6628887587435617,lArray];
 R=kb22/(BRhss2SM+k\[Gamma]22*BRhGaGa2SM+kg22*BRhgg2SM+kV22*BRhZZ2SM+kV22*BRhWW2SM+kb22*BRhbb2SM+k\[Tau]22*(BRh\[Tau]\[Tau]2SM+BRh\[Mu]\[Mu]2SM)+BRhcc2SM+BRhZ\[Gamma]2SM);
 (a*(R*kg22-mug0)^2+2*b*(R*kg22-mug0)*(R*kV22-muV0)+c*(R*kV22-muV0)^2)
 ];
+*)
 
 
+(*
 chiJB=chiWW+chiZZ+chi\[Tau]\[Tau]+chi\[Gamma]\[Gamma]+chibb
 LHCconst
 
 100*(chi-LHCconst)/LHCconst
+*)
 
 
 (* Main program *)
