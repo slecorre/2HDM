@@ -1,5 +1,5 @@
 (* ::Package:: *)
-
+KHI2 !!
 BeginPackage["THDMfull`"]
 
 Begin["Private`"]
@@ -185,7 +185,7 @@ Print["Initializations DONE"]
 
 
 
-(*(* "Heavy" higgs at 125 GeV *) 
+(* "Heavy" higgs at 125 GeV *) 
 
 BRhGaGa2=Array2HDM[[All,66]];
 BRhgg2=Array2HDM[[All,68]];
@@ -221,10 +221,10 @@ kZ\[Gamma]22=Array2HDM[[All,104]];
 kt22=Array2HDM[[All,106]];
 Print["Done !"]
 
-*)
 
 
-(*chiWW=Block[{a,b,c,mug0,muV0,R}, a=22.53542693935295;
+
+chiWW=Block[{a,b,c,mug0,muV0,R}, a=22.53542693935295;
 b=2.382300635300683;
 c=6.972321500447737;
 mug0=Table[1.0199730149215416,lArray];
@@ -234,7 +234,7 @@ muV0 = Table[1.4062238304760846,lArray];
 R=kV22/(BRhss2SM+k\[Gamma]22*BRhGaGa2SM+kg22*BRhgg2SM+kV22*BRhZZ2SM+kV22*BRhWW2SM+kb22*BRhbb2SM+k\[Tau]22*(BRh\[Tau]\[Tau]2SM+BRh\[Mu]\[Mu]2SM)+BRhcc2SM+BRhZ\[Gamma]2SM);
 (a*(R*kg22-mug0)^2+2*b*(R*kg22-mug0)*(R*kV22-muV0)+c*(R*kV22-muV0)^2)
 ];
-*)
+
 
 
 (*chiZZ=Block[{a,b,c,mug0,muV0,R}, a=11.065910085978555;
